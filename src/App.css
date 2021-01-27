@@ -28,7 +28,25 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+h1 {
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.icon-spin {
+  margin-right: 10px;
+  animation: icon-spin 2s infinite linear;
+}
+@keyframes icon-spin {
   from {
     transform: rotate(0deg);
   }
